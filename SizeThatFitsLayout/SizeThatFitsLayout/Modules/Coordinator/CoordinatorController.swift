@@ -27,7 +27,35 @@ class CoordinatorController: UINavigationController {
     }
     
     private func showExampleSelect() {
-        let exampleViewController = moduleFactory.makeExampleSelect()
-        setViewControllers([exampleViewController], animated: false)
+        let exampleSelectViewController = moduleFactory.makeExampleSelect()
+        
+        exampleSelectViewController.onFrameExample = { [weak self] in
+            self?.showFrameExample()
+        }
+        
+        exampleSelectViewController.onPinExample = { [weak self] in
+            self?.showPinExample()
+        }
+        
+        exampleSelectViewController.onFlexExample = { [weak self] in
+            self?.showFlexExample()
+        }
+        
+        setViewControllers([exampleSelectViewController], animated: false)
+    }
+    
+    private func showFrameExample() {
+        let frameExampleViewController = moduleFactory.makeFrameExample()
+        pushViewController(frameExampleViewController, animated: true)
+    }
+    
+    private func showFlexExample() {
+        let flexExampleViewController = moduleFactory.makeFlexExample()
+        pushViewController(flexExampleViewController, animated: true)
+    }
+    
+    private func showPinExample() {
+        let pinExampleViewController = moduleFactory.makePinExample()
+        pushViewController(pinExampleViewController, animated: true)
     }
 }

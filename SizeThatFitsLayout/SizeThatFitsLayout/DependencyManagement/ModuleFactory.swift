@@ -10,7 +10,10 @@ import UIKit
 protocol ModuleFactory {
     func makeRootController() -> UIViewController
     func makeCoordinator() -> UIViewController
-    func makeExampleSelect() -> UIViewController
+    func makeExampleSelect() -> UIViewController & ExampleSelectModuleOutput
+    func makeFrameExample() -> UIViewController
+    func makeFlexExample() -> UIViewController
+    func makePinExample() -> UIViewController
 }
 
 class ModuleFactoryImpl: ModuleFactory {
@@ -23,8 +26,20 @@ class ModuleFactoryImpl: ModuleFactory {
         return CoordinatorController(moduleFactory: self)
     }
     
-    func makeExampleSelect() -> UIViewController {
+    func makeExampleSelect() -> UIViewController & ExampleSelectModuleOutput {
         return ExampleSelectViewController<ExampleSelectRootViewImpl>()
+    }
+    
+    func makeFrameExample() -> UIViewController {
+        return FrameExampleViewController<FrameExampleViewImpl>()
+    }
+    
+    func makeFlexExample() -> UIViewController {
+        return FlexExampleViewController<FlexExampleViewImpl>()
+    }
+    
+    func makePinExample() -> UIViewController {
+        return PinExampleViewController<PinExampleViewImpl>()
     }
 }
 

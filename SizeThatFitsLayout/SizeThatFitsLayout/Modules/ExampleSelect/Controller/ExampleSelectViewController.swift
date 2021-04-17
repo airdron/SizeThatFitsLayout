@@ -7,8 +7,22 @@
 
 import UIKit
 
-final class ExampleSelectViewController<RootView: ExampleSelectRootView>: UIViewController, ViewSpecifying {
+protocol ExampleSelectModuleOutput: AnyObject {
+    var onFrameExample: (() -> Void)? { get set }
+    var onFlexExample: (() -> Void)? { get set }
+    var onPinExample: (() -> Void)? { get set }
+
+}
+
+final class ExampleSelectViewController<RootView: ExampleSelectRootView>: UIViewController,
+                                                                          ViewSpecifying,
+                                                                          ExampleSelectModuleOutput {
     typealias View = RootView
+    
+    // MARK: - ExampleSelectModuleOutput
+    var onFrameExample: (() -> Void)?
+    var onFlexExample: (() -> Void)?
+    var onPinExample: (() -> Void)?
     
     override func loadView() {
         view = RootView()
@@ -24,18 +38,18 @@ final class ExampleSelectViewController<RootView: ExampleSelectRootView>: UIView
             switch type {
             case .frame:
                 return ExampleSelectViewModel(title: type.title,
-                                              selectionHandler: {
-                                                
+                                              selectionHandler: { [weak self] in
+                                                self?.onFrameExample?()
                                               })
             case .flexLayout:
                 return ExampleSelectViewModel(title: type.title,
-                                              selectionHandler: {
-                                                
+                                              selectionHandler: { [weak self] in
+                                                self?.onFlexExample?()
                                               })
             case .pinLayout:
                 return ExampleSelectViewModel(title: type.title,
-                                              selectionHandler: {
-                                                
+                                              selectionHandler: { [weak self] in
+                                                self?.onPinExample?()
                                               })
             }
         }
