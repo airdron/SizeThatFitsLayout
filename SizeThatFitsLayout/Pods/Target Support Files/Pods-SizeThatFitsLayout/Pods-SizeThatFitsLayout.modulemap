@@ -1,0 +1,6 @@
+framework module Pods_SizeThatFitsLayout {
+  umbrella header "Pods-SizeThatFitsLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}
