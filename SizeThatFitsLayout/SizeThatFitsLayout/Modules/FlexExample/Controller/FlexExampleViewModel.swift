@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import UIKit.UIImage
 
 struct FlexExampleViewModel {
-    
+    let childViewModel: FlexExampleChildViewModel
 }

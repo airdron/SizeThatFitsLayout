@@ -6,7 +6,10 @@
 //
 
 import Foundation
+import UIKit.UIImage
 
 struct FlexExampleModel {
-    
+    let author = "Test Author\nName"
+    let imageName = "Test\nImage\nDescription"
+    let image = UIImage(named: "TestImage")
 }

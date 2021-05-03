@@ -10,6 +10,8 @@ import UIKit
 final class FlexExampleViewController<RootView: FlexExampleView>: UIViewController, ViewSpecifying {
     typealias View = RootView
     
+    let testModel = FlexExampleModel()
+    
     override func loadView() {
         view = RootView()
     }
@@ -20,6 +22,13 @@ final class FlexExampleViewController<RootView: FlexExampleView>: UIViewControll
     }
     
     private func setup() {
-        
+        rootView.configure(
+            viewModel: .init(
+                childViewModel: .init(
+                    author: testModel.author,
+                    imageName: testModel.imageName,
+                    image: testModel.image)
+            )
+        )
     }
 }

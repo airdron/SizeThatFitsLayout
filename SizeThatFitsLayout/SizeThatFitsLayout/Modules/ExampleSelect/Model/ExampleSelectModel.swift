@@ -11,7 +11,9 @@ enum ExampleSelectModel: CaseIterable {
     case frame
     case flexLayout
     case pinLayout
-    
+    case autoLayoutSizeThatFits
+    case autoLayoutSystemLayoutFittingSize
+
     var title: String {
         switch self {
         case .frame:
@@ -20,6 +22,10 @@ enum ExampleSelectModel: CaseIterable {
             return "FlexLayout"
         case .pinLayout:
             return "PinLayout"
+        case .autoLayoutSizeThatFits:
+            return "Auto Layout костыль"
+        case .autoLayoutSystemLayoutFittingSize:
+            return "Auto Layout SystemLayoutFittingSize"
         }
     }
 }

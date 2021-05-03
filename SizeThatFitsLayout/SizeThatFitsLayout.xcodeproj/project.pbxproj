@@ -32,6 +32,8 @@
 		14B107C9262B7E9700F99413 /* FrameExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B107C8262B7E9700F99413 /* FrameExampleView.swift */; };
 		14B107CC262B7EA300F99413 /* FrameExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B107CB262B7EA300F99413 /* FrameExampleViewModel.swift */; };
 		14B107D0262B7EB200F99413 /* FrameExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B107CF262B7EB200F99413 /* FrameExampleModel.swift */; };
+		14EA087A2640842D00CD5F30 /* FlexExampleChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA08792640842D00CD5F30 /* FlexExampleChildView.swift */; };
+		14EA087E264084A200CD5F30 /* FlexExampleChildViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA087D264084A200CD5F30 /* FlexExampleChildViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		14B107C8262B7E9700F99413 /* FrameExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExampleView.swift; sourceTree = "<group>"; };
 		14B107CB262B7EA300F99413 /* FrameExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExampleViewModel.swift; sourceTree = "<group>"; };
 		14B107CF262B7EB200F99413 /* FrameExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExampleModel.swift; sourceTree = "<group>"; };
+		14EA08792640842D00CD5F30 /* FlexExampleChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexExampleChildView.swift; sourceTree = "<group>"; };
+		14EA087D264084A200CD5F30 /* FlexExampleChildViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexExampleChildViewModel.swift; sourceTree = "<group>"; };
 		8880025F4AE817C429A32CB2 /* Pods-SizeThatFitsLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SizeThatFitsLayout.release.xcconfig"; path = "Target Support Files/Pods-SizeThatFitsLayout/Pods-SizeThatFitsLayout.release.xcconfig"; sourceTree = "<group>"; };
 		B2849B8583ACE7F0B4E379E1 /* Pods-SizeThatFitsLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SizeThatFitsLayout.debug.xcconfig"; path = "Target Support Files/Pods-SizeThatFitsLayout/Pods-SizeThatFitsLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		BA3241F7B9E8F9502D3DA92B /* Pods_SizeThatFitsLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SizeThatFitsLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +210,7 @@
 			children = (
 				14B107AC262B7E2600F99413 /* FlexExampleViewController.swift */,
 				14B107B6262B7E4F00F99413 /* FlexExampleViewModel.swift */,
+				14EA087D264084A200CD5F30 /* FlexExampleChildViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				14B107B0262B7E3400F99413 /* FlexExampleView.swift */,
+				14EA08792640842D00CD5F30 /* FlexExampleChildView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,9 +437,11 @@
 				14B107AD262B7E2600F99413 /* FlexExampleViewController.swift in Sources */,
 				14B10797262B66FD00F99413 /* ExampleSelectViewModel.swift in Sources */,
 				14B107BD262B7E6B00F99413 /* PinExampleViewModel.swift in Sources */,
+				14EA087E264084A200CD5F30 /* FlexExampleChildViewModel.swift in Sources */,
 				14B10762262B3F9500F99413 /* AppDelegate.swift in Sources */,
 				14B107D0262B7EB200F99413 /* FrameExampleModel.swift in Sources */,
 				14B1079A262B6B5B00F99413 /* ExampleSelectModel.swift in Sources */,
+				14EA087A2640842D00CD5F30 /* FlexExampleChildView.swift in Sources */,
 				14B107C9262B7E9700F99413 /* FrameExampleView.swift in Sources */,
 				14B107CC262B7EA300F99413 /* FrameExampleViewModel.swift in Sources */,
 				14B107BA262B7E6000F99413 /* PinExampleViewController.swift in Sources */,

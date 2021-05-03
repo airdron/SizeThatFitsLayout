@@ -51,6 +51,16 @@ final class ExampleSelectViewController<RootView: ExampleSelectRootView>: UIView
                                               selectionHandler: { [weak self] in
                                                 self?.onPinExample?()
                                               })
+            case .autoLayoutSizeThatFits:
+                return ExampleSelectViewModel(title: type.title,
+                                              selectionHandler: { [weak self] in
+                                                
+                                              })
+            case .autoLayoutSystemLayoutFittingSize:
+                return ExampleSelectViewModel(title: type.title,
+                                              selectionHandler: { [weak self] in
+                                                
+                                              })
             }
         }
         rootView.configure(viewModels: viewModels)
