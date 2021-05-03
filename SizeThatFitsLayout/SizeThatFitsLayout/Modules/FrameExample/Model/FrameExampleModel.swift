@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import UIKit.UIImage
 
 struct FrameExampleModel {
-    
+    let imageName = "Так делать\nне стоит.\nЛибо держать в голове, что лейаут произойдет во время SizeThatFits"
+    let image = UIImage(named: "TestImage")
 }

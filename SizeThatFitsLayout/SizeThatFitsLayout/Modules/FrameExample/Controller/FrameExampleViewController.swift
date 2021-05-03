@@ -10,6 +10,8 @@ import UIKit
 final class FrameExampleViewController<RootView: FrameExampleView>: UIViewController, ViewSpecifying {
     typealias View = RootView
     
+    private let testModel = FrameExampleModel()
+    
     override func loadView() {
         view = RootView()
     }
@@ -20,6 +22,13 @@ final class FrameExampleViewController<RootView: FrameExampleView>: UIViewContro
     }
     
     private func setup() {
-        
+        rootView.configure(
+            viewModel: .init(
+                childViewModel: .init(
+                    imageName: testModel.imageName,
+                    image: testModel.image
+                )
+            )
+        )
     }
 }

@@ -34,7 +34,7 @@ final class ExampleSelectViewController<RootView: ExampleSelectRootView>: UIView
     }
     
     private func setup() {
-        let viewModels = ExampleSelectModel.allCases.map { type -> ExampleSelectViewModel in
+        let viewModels = ExampleSelectModel.allCases.compactMap { type -> ExampleSelectViewModel? in
             switch type {
             case .frame:
                 return ExampleSelectViewModel(title: type.title,
@@ -52,15 +52,19 @@ final class ExampleSelectViewController<RootView: ExampleSelectRootView>: UIView
                                                 self?.onPinExample?()
                                               })
             case .autoLayoutSizeThatFits:
-                return ExampleSelectViewModel(title: type.title,
-                                              selectionHandler: { [weak self] in
-                                                
-                                              })
+                return nil
+                // will be implemeted later
+//                return ExampleSelectViewModel(title: type.title,
+//                                              selectionHandler: { [weak self] in
+//
+//                                              })
             case .autoLayoutSystemLayoutFittingSize:
-                return ExampleSelectViewModel(title: type.title,
-                                              selectionHandler: { [weak self] in
-                                                
-                                              })
+                return nil
+                // will be implemeted later
+//                return ExampleSelectViewModel(title: type.title,
+//                                              selectionHandler: { [weak self] in
+//
+//                                              })
             }
         }
         rootView.configure(viewModels: viewModels)

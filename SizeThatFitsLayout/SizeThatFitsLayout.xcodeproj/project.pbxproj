@@ -36,6 +36,8 @@
 		14EA087E264084A200CD5F30 /* FlexExampleChildViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA087D264084A200CD5F30 /* FlexExampleChildViewModel.swift */; };
 		14EA088126408AEF00CD5F30 /* PinExampleChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA088026408AEF00CD5F30 /* PinExampleChildView.swift */; };
 		14EA088426408B5500CD5F30 /* PinExampleChildViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA088326408B5500CD5F30 /* PinExampleChildViewModel.swift */; };
+		14EA08872640915700CD5F30 /* FrameExampleChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA08862640915700CD5F30 /* FrameExampleChildView.swift */; };
+		14EA088A2640934200CD5F30 /* FrameExampleChildViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA08892640934200CD5F30 /* FrameExampleChildViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		14EA087D264084A200CD5F30 /* FlexExampleChildViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexExampleChildViewModel.swift; sourceTree = "<group>"; };
 		14EA088026408AEF00CD5F30 /* PinExampleChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinExampleChildView.swift; sourceTree = "<group>"; };
 		14EA088326408B5500CD5F30 /* PinExampleChildViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinExampleChildViewModel.swift; sourceTree = "<group>"; };
+		14EA08862640915700CD5F30 /* FrameExampleChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExampleChildView.swift; sourceTree = "<group>"; };
+		14EA08892640934200CD5F30 /* FrameExampleChildViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExampleChildViewModel.swift; sourceTree = "<group>"; };
 		8880025F4AE817C429A32CB2 /* Pods-SizeThatFitsLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SizeThatFitsLayout.release.xcconfig"; path = "Target Support Files/Pods-SizeThatFitsLayout/Pods-SizeThatFitsLayout.release.xcconfig"; sourceTree = "<group>"; };
 		B2849B8583ACE7F0B4E379E1 /* Pods-SizeThatFitsLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SizeThatFitsLayout.debug.xcconfig"; path = "Target Support Files/Pods-SizeThatFitsLayout/Pods-SizeThatFitsLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		BA3241F7B9E8F9502D3DA92B /* Pods_SizeThatFitsLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SizeThatFitsLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -268,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				14B107C8262B7E9700F99413 /* FrameExampleView.swift */,
+				14EA08862640915700CD5F30 /* FrameExampleChildView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 			children = (
 				14B107C5262B7E8C00F99413 /* FrameExampleViewController.swift */,
 				14B107CB262B7EA300F99413 /* FrameExampleViewModel.swift */,
+				14EA08892640934200CD5F30 /* FrameExampleChildViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -454,6 +460,7 @@
 				14B107CC262B7EA300F99413 /* FrameExampleViewModel.swift in Sources */,
 				14B107BA262B7E6000F99413 /* PinExampleViewController.swift in Sources */,
 				14B10794262B588F00F99413 /* ExampleSelectRootView.swift in Sources */,
+				14EA08872640915700CD5F30 /* FrameExampleChildView.swift in Sources */,
 				14B1077F262B424B00F99413 /* ModuleFactory.swift in Sources */,
 				14B10782262B426300F99413 /* RootViewController.swift in Sources */,
 				14B107C6262B7E8C00F99413 /* FrameExampleViewController.swift in Sources */,
@@ -461,6 +468,7 @@
 				14B10764262B3F9500F99413 /* SceneDelegate.swift in Sources */,
 				14B10791262B4F1800F99413 /* ExampleSelectViewController.swift in Sources */,
 				14B107B1262B7E3400F99413 /* FlexExampleView.swift in Sources */,
+				14EA088A2640934200CD5F30 /* FrameExampleChildViewModel.swift in Sources */,
 				14B107B7262B7E4F00F99413 /* FlexExampleViewModel.swift in Sources */,
 				14B107C0262B7E7500F99413 /* PinExampleView.swift in Sources */,
 				14B10786262B49BE00F99413 /* CoordinatorController.swift in Sources */,
