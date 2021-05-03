@@ -10,7 +10,7 @@ import UIKit
 final class FlexExampleViewController<RootView: FlexExampleView>: UIViewController, ViewSpecifying {
     typealias View = RootView
     
-    let testModel = FlexExampleModel()
+    private let testModel = FlexExampleModel()
     
     override func loadView() {
         view = RootView()

@@ -10,6 +10,8 @@ import UIKit
 final class PinExampleViewController<RootView: PinExampleView>: UIViewController, ViewSpecifying {
     typealias View = RootView
     
+    private let testModel = PinExampleModel()
+    
     override func loadView() {
         view = RootView()
     }
@@ -20,6 +22,15 @@ final class PinExampleViewController<RootView: PinExampleView>: UIViewController
     }
     
     private func setup() {
-        
+        rootView.configure(
+            viewModel: .init(
+                childViewModel: .init(
+                    author: testModel.author,
+                    imageName: testModel.imageName,
+                    date: testModel.date,
+                    image: testModel.image
+                )
+            )
+        )
     }
 }

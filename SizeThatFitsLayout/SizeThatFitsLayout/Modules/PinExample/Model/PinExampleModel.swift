@@ -6,7 +6,11 @@
 //
 
 import Foundation
+import UIKit.UIImage
 
 struct PinExampleModel {
-    
+    let author = "Test Author\nName"
+    let imageName = "Test\nImage\nDescription"
+    let date = "12.12.12"
+    let image = UIImage(named: "TestImage")
 }

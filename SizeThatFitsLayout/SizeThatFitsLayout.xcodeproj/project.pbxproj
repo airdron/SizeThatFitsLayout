@@ -34,6 +34,8 @@
 		14B107D0262B7EB200F99413 /* FrameExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B107CF262B7EB200F99413 /* FrameExampleModel.swift */; };
 		14EA087A2640842D00CD5F30 /* FlexExampleChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA08792640842D00CD5F30 /* FlexExampleChildView.swift */; };
 		14EA087E264084A200CD5F30 /* FlexExampleChildViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA087D264084A200CD5F30 /* FlexExampleChildViewModel.swift */; };
+		14EA088126408AEF00CD5F30 /* PinExampleChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA088026408AEF00CD5F30 /* PinExampleChildView.swift */; };
+		14EA088426408B5500CD5F30 /* PinExampleChildViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA088326408B5500CD5F30 /* PinExampleChildViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,8 @@
 		14B107CF262B7EB200F99413 /* FrameExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExampleModel.swift; sourceTree = "<group>"; };
 		14EA08792640842D00CD5F30 /* FlexExampleChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexExampleChildView.swift; sourceTree = "<group>"; };
 		14EA087D264084A200CD5F30 /* FlexExampleChildViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexExampleChildViewModel.swift; sourceTree = "<group>"; };
+		14EA088026408AEF00CD5F30 /* PinExampleChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinExampleChildView.swift; sourceTree = "<group>"; };
+		14EA088326408B5500CD5F30 /* PinExampleChildViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinExampleChildViewModel.swift; sourceTree = "<group>"; };
 		8880025F4AE817C429A32CB2 /* Pods-SizeThatFitsLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SizeThatFitsLayout.release.xcconfig"; path = "Target Support Files/Pods-SizeThatFitsLayout/Pods-SizeThatFitsLayout.release.xcconfig"; sourceTree = "<group>"; };
 		B2849B8583ACE7F0B4E379E1 /* Pods-SizeThatFitsLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SizeThatFitsLayout.debug.xcconfig"; path = "Target Support Files/Pods-SizeThatFitsLayout/Pods-SizeThatFitsLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		BA3241F7B9E8F9502D3DA92B /* Pods_SizeThatFitsLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SizeThatFitsLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,6 +286,7 @@
 			children = (
 				14B107B9262B7E6000F99413 /* PinExampleViewController.swift */,
 				14B107BC262B7E6B00F99413 /* PinExampleViewModel.swift */,
+				14EA088326408B5500CD5F30 /* PinExampleChildViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				14B107BF262B7E7500F99413 /* PinExampleView.swift */,
+				14EA088026408AEF00CD5F30 /* PinExampleChildView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -440,9 +446,11 @@
 				14EA087E264084A200CD5F30 /* FlexExampleChildViewModel.swift in Sources */,
 				14B10762262B3F9500F99413 /* AppDelegate.swift in Sources */,
 				14B107D0262B7EB200F99413 /* FrameExampleModel.swift in Sources */,
+				14EA088126408AEF00CD5F30 /* PinExampleChildView.swift in Sources */,
 				14B1079A262B6B5B00F99413 /* ExampleSelectModel.swift in Sources */,
 				14EA087A2640842D00CD5F30 /* FlexExampleChildView.swift in Sources */,
 				14B107C9262B7E9700F99413 /* FrameExampleView.swift in Sources */,
+				14EA088426408B5500CD5F30 /* PinExampleChildViewModel.swift in Sources */,
 				14B107CC262B7EA300F99413 /* FrameExampleViewModel.swift in Sources */,
 				14B107BA262B7E6000F99413 /* PinExampleViewController.swift in Sources */,
 				14B10794262B588F00F99413 /* ExampleSelectRootView.swift in Sources */,
