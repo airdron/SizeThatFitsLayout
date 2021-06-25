@@ -39,6 +39,10 @@ class PinExampleChildView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        performLayout()
+    }
+    
+    func performLayout() {
         containerView.pin.all()
         leftLabel.pin
             .top()
@@ -60,13 +64,11 @@ class PinExampleChildView: UIView {
         dateLabel.pin
             .below(of: imageView)
             .horizontally()
-            .sizeToFit(.width)
+            .sizeToFit(.width)   
     }
     
     override func sizeThatFits(_ size: CGSize) -> CGSize {
-        return containerView.autoSizeThatFits(size, layoutClosure: {
-            layoutSubviews()
-        })
+        return containerView.autoSizeThatFits(size, layoutClosure: performLayout)
     }
     
     func configure(viewModel: PinExampleChildViewModel) {
